@@ -56,6 +56,8 @@ else
     INSTALL_DIR="$GLOB_INST_DIR"
 fi
 
+mkdir -p "$INSTALL_DIR"
+
 # Uninstallation procedure
 if [ $UNINSTALL = 1 ]; then
     if [ -f "$INSTALL_DIR/$BIN_NAME" ]; then
